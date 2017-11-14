@@ -9,7 +9,7 @@ $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die ('could n
 $db_host = 'localhost';
 $db_name = 'questionnaire';
 $db_user = 'root';
-$db_pass = 'root';
+$db_pass = '';
 
 //mysqli object 
 $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);
