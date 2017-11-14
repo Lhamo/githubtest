@@ -70,7 +70,6 @@ $choices = $mysqli->query($query) or die ($mysqli->error.__LINE__);
         </form>
         </div>
 	</div>
-
 	
     <footer>
     <div class="container">
