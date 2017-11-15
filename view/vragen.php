@@ -1,4 +1,4 @@
-<?php include '../model/db/MySQLConnection.php';?>
+<?php include '../model/db/connect.php';?>
 <?php
 //set questionnumber
 $number = (int) $_GET['n'];
