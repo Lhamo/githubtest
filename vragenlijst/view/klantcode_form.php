@@ -1,20 +1,6 @@
 <?php 
-include ("include/header.php");
-
-if (isset($_SESSION['user']))
-    {
-    header("Location: http:://localhost:81/vragenlijst/index.php");
-    }
-//Account activeren
-if ( isset($_GET['active'])|| isset($_GET['submit']))
-    {
-    $tk = isset($_POST['submit']) ? $_POST['active'] : $_GET['active'];
-    $id = isset($_POST['submit']) ? $_POST['id'] : $_GET['id'];
-    
-    $user->activate($id, $tk);   
-    }
+include ("../include/header.php");
 ?>
-      
     <div class="container-fluid" style="margin-top: 25px;">
       <div class="row">
         <div class="col-sm-4 offset-sm-4">
@@ -32,7 +18,7 @@ if ( isset($_GET['active'])|| isset($_GET['submit']))
                       unset ($_SESSION['error']);
                     }
                 ?>
-                <form method="post">
+                <form method="post" action="klantcode.php">
                   <div class="form-group">
                     <label for="active">Verificatie Code</label>
                     <input type="text" class="form-control" id="active" name="active" placeholder="Vul de code in">
@@ -51,4 +37,4 @@ if ( isset($_GET['active'])|| isset($_GET['submit']))
       
       </div>
 
-<?php include ("include/footer.php");?>
+<?php include ("../include/footer.php");?>

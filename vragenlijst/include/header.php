@@ -3,7 +3,7 @@ session_start();
 
 $current_url = $_SERVER['SERVER_NAME'].''.$_SERVER['REQUEST_URI'];
 
-include ("include/userClass.php");
+include ("../model/userClass.php");
 //nieuw gebruiker instantieren
 $user = new User();
 ?>
@@ -21,8 +21,8 @@ $user = new User();
   <body>
     <?php 
       //behalve bij activatie pagina toon navigatie bar
-      if (strpos($current_url, "activate.php")=== false){
-         include ("include/nav.php"); 
+      if (strpos($current_url, "/view/klantcode_form.php")=== false){
+         include ("../include/nav.php"); 
       }
       
       ?>

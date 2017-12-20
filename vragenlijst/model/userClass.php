@@ -73,9 +73,9 @@ class User extends mysqli{
         if ($run){
             $user = $this->getuserbyid($id);
             $_SESSION['user'] = $user;
-            header("Location: http://localhost:81/vragenlijst/index.php");
+            header("Location: http://localhost:81/vragenlijst/intake.php");
         }else{
-            $_SESSION['error'] = "Wrong Activation Code.";
+            $_SESSION['error'] = "Onjuiste code!";
         }
     }
     
@@ -98,7 +98,7 @@ class User extends mysqli{
             
             if (password_verify($password, $row->password)){
             $_SESSION['user']= $row;
-            header("Location: http://localhost:81/vragenlijst/index.php");
+            header("Location: http://localhost:81/vragenlijst/view/index.php");
             }else{
             $_SESSION['error'] = "Password is not valid";
         }

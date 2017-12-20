@@ -1,15 +1,6 @@
 <?php 
-include ("include/header.php");
+include ("../include/header.php");
 
-if (isset($_SESSION['user']))
-    {
-    header("Location: http://localhost:81/vragenlijst/index.php");
-    }
-//authenticatie functie van de class User uitvoeren bij het submitten. Controleren van inloggegevens
-if (isset($_POST['submit']))
-    {
-    $user->auth($_POST['email'], $_POST['password']);
-    }
 ?>
  
     <div class="container-fluid" style="margin-top: 25px;">
@@ -29,7 +20,7 @@ if (isset($_POST['submit']))
                     unset ($_SESSION['error']);
                     }
                 ?>  
-                <form method="post">
+                <form method="post" action="../controller/login.php">
                   <div class="form-group">
                     <label for="email">E-mail adres</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
@@ -48,4 +39,4 @@ if (isset($_POST['submit']))
       
       </div>
 
-<?php include ("include/footer.php");?>
+<?php include ("../include/footer.php");?>

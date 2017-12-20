@@ -1,8 +1,10 @@
 <?php 
-include ("include/header.php");
+include ("../include/header.php");
+
 //Kijk of een gebruiker ingelogd is
+
 if(!isset($_SESSION['user'])){
-    header("Location: http://localhost:81/vragenlijst/register.php");
+    header("Location: http://localhost:81/vragenlijst/view/register_form.php");
 }
 ?>    
     <div class="container-fluid" style="margin-top: 25px;">
@@ -20,4 +22,4 @@ if(!isset($_SESSION['user'])){
         </div>  
     </div>
 
-<?php include ("include/footer.php");?>
+<?php include ("../include/footer.php");?>
