@@ -2,5 +2,5 @@
 session_start();
 session_destroy();
 
-header("Location: http://localhost:81/vragenlijst/view/login_form.php");
+header("Location: http://localhost/githubtest/vragenlijst/view/login_form.php");
 ?>

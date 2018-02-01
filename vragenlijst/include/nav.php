@@ -32,7 +32,7 @@
         <a class="nav-link" href="../controller/logout.php">Logout</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="intake.php">Intake</a>
+        <a class="nav-link" href="../view/intake.php">Intake</a>
       </li>
         <?php }?>
     </ul>

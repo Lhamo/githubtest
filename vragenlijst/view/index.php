@@ -4,7 +4,7 @@ include ("../include/header.php");
 //Kijk of een gebruiker ingelogd is
 
 if(!isset($_SESSION['user'])){
-    header("Location: http://localhost:81/vragenlijst/view/register_form.php");
+    header ("view/register_form.php");
 }
 ?>    
     <div class="container-fluid" style="margin-top: 25px;">

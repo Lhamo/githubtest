@@ -3,7 +3,7 @@
 include ("../include/header.php");
 if (isset($_SESSION['user']))
     {
-    header("Location: http:://localhost:81/vragenlijst/index.php");
+    header("Location: http:://localhost/githubtest/vragenlijst/view/index.php");
     }
 //Account activeren
 if ( isset($_GET['active'])|| isset($_GET['submit']))
